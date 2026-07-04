@@ -6,15 +6,15 @@ book:
   title: "Cookbook"
   author: "Ahmad Hatahet"
   downloads: [pdf]
-  sidebar:
-    - title: "Welcome & Biography"
-      href: index.qmd
-    - title: "Daily Automation"
-      contents: automation/*.qmd
-    - title: "Architecture & Paradigms"
-      contents: architecture/*.qmd
-    - title: "Data Engineering"
-      contents: data-eng/*.qmd
+  chapters:
+    - index.qmd
+    - part: "Daily Automation"
+      chapters:
+        - automation/just-productivity.qmd
+        - automation/uv-workspaces.qmd
+    - part: "Architecture & Paradigms"
+      chapters:
+        - architecture/local-llm-serving.qmd
 
 format:
   html:
