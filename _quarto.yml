@@ -1,24 +1,38 @@
 project:
-  type: book
-  output-dir: _book
+  type: website
 
-book:
+website:
   title: "Cookbook"
-  author: "Ahmad Hatahet"
-  downloads: [pdf]
-  chapters:
-    - index.qmd
-    - part: "Daily Automation"
-      chapters:
-        - automation/just-productivity.qmd
-        - automation/uv-workspaces.qmd
-    - part: "Architecture & Paradigms"
-      chapters:
-        - architecture/local-llm-serving.qmd
+  description: "A living cookbook of software development practices, architecture patterns, and data engineering solutions."
+  page-footer:
+    left: "© Ahmad Hatahet"
+    right: "Built with [Quarto](https://quarto.org)"
+  sidebar:
+    style: "floating"
+    search: true
+    collapse-level: 1
+    contents:
+      - index.qmd
+      - section: "Daily Automation"
+        contents: automation/*.qmd
+      - section: "Architecture & Paradigms"
+        contents: architecture/*.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: litera
+    css: styles.css
     toc: true
+    grid:
+      sidebar-width: 320px
+      body-width: 850px
   pdf:
-    documentclass: scrreprt
+    documentclass: scrartcl
+    papersize: a4
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    toc: true
+    colorlinks: true
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
