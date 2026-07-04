@@ -1,0 +1,16 @@
+---
+title: "Productivity with Just"
+---
+
+The `just` command-line runner provides a clean method to manage daily development shortcuts without Makefile complexities.
+
+## Sample Workflow
+
+Below is a baseline flowchart tracking execution sequences:
+
+```{mermaid}
+graph TD
+    A[Run: just target] --> B{Target valid?}
+    B -- Yes --> C[Execute target recipes]
+    B -- No --> D[Halt process]
+```

@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Cookbook"
+  author: "Ahmad Hatahet"
+  downloads: [pdf]
+  sidebar:
+    - title: "Welcome"
+      href: index.qmd
+    - title: "Daily Automation"
+      contents: automation/*.qmd
+    - title: "Architecture & Paradigms"
+      contents: architecture/*.qmd
+    - title: "Data Engineering"
+      contents: data-eng/*.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+  pdf:
+    documentclass: scrreprt

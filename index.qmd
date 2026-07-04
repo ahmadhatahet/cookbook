@@ -1,0 +1,9 @@
+# Welcome {.unnumbered}
+
+This is a living book of skills, background knowledge, and collected experiences across software development, system architecture, and data engineering.
+
+## Structure
+
+* **Daily Automation:** Tactical workflows and tool configurations to optimize daily production.
+* **Architecture & Paradigms:** High-level system design patterns and software architectural blueprints.
+* **Data Engineering:** Data pipelines, storage paradigms, and state processing methodologies.

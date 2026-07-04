@@ -1,0 +1,7 @@
+[project]
+name = "cookbook"
+version = "0.1.0"
+description = "Development skills and architecture cookbook"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
