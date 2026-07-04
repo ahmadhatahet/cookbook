@@ -7,7 +7,7 @@ book:
   author: "Ahmad Hatahet"
   downloads: [pdf]
   sidebar:
-    - title: "Welcome"
+    - title: "Welcome & Biography"
       href: index.qmd
     - title: "Daily Automation"
       contents: automation/*.qmd

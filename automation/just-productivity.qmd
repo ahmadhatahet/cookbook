@@ -1,16 +1,38 @@
 ---
-title: "Productivity with Just"
+title: "Tactical Automation with Just"
 ---
 
-The `just` command-line runner provides a clean method to manage daily development shortcuts without Makefile complexities.
+The `just` tool provides a modern alternative to traditional Makefiles for managing operational tasks.
 
-## Sample Workflow
+### Installation & Global Setup
+Install `just` across core operating systems via standard package managers:
+```bash
+# macOS
+brew install just
 
-Below is a baseline flowchart tracking execution sequences:
+# Linux (Ubuntu/Debian)
+sudo apt install just
+```
 
-```{mermaid}
-graph TD
-    A[Run: just target] --> B{Target valid?}
-    B -- Yes --> C[Execute target recipes]
-    B -- No --> D[Halt process]
+### Directory-Level Implementation
+Create a standard project recipe runner file named `justfile` in the root of your project directory:
+```makefile
+# Definal default behavior
+default:
+    @just --list
+
+# Set up operational virtual environments
+setup:
+    uv sync
+
+# Execute local code suites
+run-app:
+    uv run python -m src.main
+```
+
+### Execution Commands
+Invoke targets directly inside the project root terminal directory:
+```bash
+just setup      # Triggers project dependency alignment
+just run-app    # Boots localized execution target
 ```
