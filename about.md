@@ -1,25 +1,26 @@
-# Welcome {.unnumbered}
+---
+title: "About"
+---
 
 Welcome to my living cookbook of software development practices, architecture patterns, and data engineering solutions.
-
-You can view my background details, publications, and professional trajectory directly on the [Biography & CV](index.qmd#biography) section, or explore my ongoing technical entries using the sidebar navigation.
-
----
 
 ## Biography
 
 I am an **Artificial Intelligence Researcher** at the **Institute for Software and Systems Engineering (ISSE), Technical University of Clausthal**, Germany. My research focuses on the intersection of Software Engineering, Autonomous Agents, and Large Language Models—specifically accelerating agile development workflows, reverse engineering system architectures, and engineering robust multi-agent systems.
 
 ### Core Competencies
+
 * **AI Engineering & LLMs:** Agentic workflow architectures, local model orchestration, RAG pipelines, and model optimization.
 * **Software Engineering Research:** Automatic Software Architecture Description (SAD) extraction, behavior recovery, and system verification.
 * **Data Architecture:** High-throughput processing pipelines, scalable backend engineering, and containerized deployment frameworks.
 
 ### Academic & Research Background
+
 * **M.Sc. in Computer Science** — Clausthal University of Technology
 * **B.Sc. in Accounting** — Cairo University
 * **Key Publication:** *Human–AI Collaboration for Scaling Agile Regression Testing: An Agentic-AI Teammate from Manual to Automated Testing* (Exploring autonomous LLM testing pipelines in production environments).
 
 ### Online Portals
+
 * [Professional LinkedIn Profile](https://www.linkedin.com/in/ahmadhatahet)
 * [ResearchGate Portal](https://www.researchgate.net/profile/Ahmad-Hatahet)

@@ -1,4 +1,4 @@
-name: Deploy Book
+name: Deploy Cookbook
 
 on:
   push:
@@ -31,13 +31,8 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
-
-      - name: Render Quarto project
-        run: quarto render
+      - name: Build site
+        run: uv run build.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
